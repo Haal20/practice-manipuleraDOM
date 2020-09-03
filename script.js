@@ -12,7 +12,20 @@ nameParagraf.appendChild(myName);
 //appendar <P> till <div>
 nameDiv.appendChild(nameParagraf);
 
+//skriver ut mitt namn på documentsidan
 document.body.appendChild(nameDiv);
 document.body.appendChild(arrayDiv);
 
-console.log();
+//funktion att kalla på när jag vill ha min lista
+function pushArray() {
+  //skapa <ul>
+  document.body.insertAdjacentHTML("beforeend", "<ul></ul>");
+
+  //hämta <ul>
+  let lista = document.getElementsByTagName("ul")[0];
+
+  //gör en loop för att hitta varje element i arrayen
+  for (i = 0; i < myArray.length; i++) {
+    lista.insertAdjacentHTML("beforeend", "<li>" + myArray[i] + "</li>");
+  }
+}
