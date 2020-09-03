@@ -1,0 +1,1 @@
+//Min externa script fil
