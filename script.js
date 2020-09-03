@@ -7,4 +7,12 @@ let myName = document.createTextNode("Alma");
 //skapa och lägga till element i array
 let myArray = ["Programmera", "Måla", "Ju-jutsu", "Hjälpa andra"];
 
-console.log(myName);
+//appendade mitt namn till <p>
+nameParagraf.appendChild(myName);
+//appendar <P> till <div>
+nameDiv.appendChild(nameParagraf);
+
+document.body.appendChild(nameDiv);
+document.body.appendChild(arrayDiv);
+
+console.log();
