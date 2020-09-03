@@ -14,7 +14,7 @@ nameDiv.appendChild(nameParagraf);
 
 //skriver ut mitt namn på documentsidan
 document.body.appendChild(nameDiv);
-document.body.appendChild(arrayDiv);
+arrayDiv.innerHTML = pushArray();
 
 //funktion att kalla på när jag vill ha min lista
 function pushArray() {
