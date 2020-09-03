@@ -1,6 +1,5 @@
 //skapa alla element som behöver vara på sidan
 let nameDiv = document.createElement("div");
-let arrayDiv = document.createElement("div");
 let nameParagraf = document.createElement("p");
 //skapa sträng variable med mitt namn
 let myName = document.createTextNode("Alma");
@@ -14,12 +13,12 @@ nameDiv.appendChild(nameParagraf);
 
 //skriver ut mitt namn på documentsidan
 document.body.appendChild(nameDiv);
-arrayDiv.innerHTML = pushArray();
+pushArray();
 
 //funktion att kalla på när jag vill ha min lista
 function pushArray() {
   //skapa <ul>
-  document.body.insertAdjacentHTML("beforeend", "<ul></ul>");
+  document.body.insertAdjacentHTML("beforeend", "<div><ul></ul></div>");
 
   //hämta <ul>
   let lista = document.getElementsByTagName("ul")[0];
